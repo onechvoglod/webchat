@@ -1,0 +1,80 @@
+body {
+  font-family: "PT Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.header {
+  width: 100%;
+  background-color: #03436a;
+}
+.header_inner {
+  padding: 5px;
+}
+.header_logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 3px;
+}
+.btn-primary {
+  background-color: #245a7a;
+  border-color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.2s linear, color 0.2s linear;
+}
+.user_online {
+  border: 2px solid #03436a;
+  border-top: none;
+  height: 80vh;
+}
+.intro_inner {
+  overflow: auto;
+}
+.chat {
+  border: 2px solid #03436a;
+  border-top: none;
+}
+.your_login {
+  align-items: center;
+  margin-top: 15px;
+}
+.avatar {
+  max-width: 50px;
+  max-height: 50px;
+  position: relative;
+}
+img {
+  width: 100%;
+}
+.user_name {
+  padding-left: 15px;
+}
+.avatar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 45px;
+  bottom: -5px;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid #fff;
+}
+.user_online_header {
+  text-align: center;
+}
