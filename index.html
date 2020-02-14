@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Webchat</title>
   </head>
@@ -13,7 +17,7 @@
         <div class="row">
           <div class="col-sm-12 header_inner d-flex justify-content-between">
             <div class="header_logo">Webchat</div>
-            <button type="button" class="btn btn-primary">QUIT</button>
+            <button type="submit" class="btn btn-primary">QUIT</button>
           </div>
         </div>
       </div>
@@ -21,17 +25,31 @@
     <section class="intro">
       <div class="container">
         <div class="row">
-          <div class="col-sm-5 col-md-4 user_online d-flex flex-column">
+          <div class="col-sm-5 col-md-4 user_online  d-flex flex-column">
             <div class="your_login d-flex flex-row">
               <div class="avatar">
                 <img
                   src="images/avatar.png"
-                  alt="your foto"
+                  alt="your_foto"
                   class="rounded-circle"
                 />
               </div>
               <div class="user_name">Nechvoglod Oleg</div>
             </div>
+            <!-- <div class="your_login d-flex flex-row"> -->
+            <form>
+              <div class="form-group d-flex flex-row search">
+                <button type="submit" class="search_button">
+                  <i class="fa  fa-search "></i>
+                </button>
+                <input
+                  type="search"
+                  class="search_area"
+                  placeholder="search users"
+                />
+              </div>
+            </form>
+            <!-- </div> -->
             <h5 class="user_online_header">
               users online
             </h5>
@@ -90,5 +108,20 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="d-flex justify-content-center ">
+              <a href="https://www.youtube.com/?gl=UA"
+                ><img src="images/youtube.svg" alt="youtube" class="icons"
+              /></a>
+              <img src="images/twitter.svg" alt="twitter" class="icons" />
+              <img src="images/google.svg" alt="google" class="icons" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

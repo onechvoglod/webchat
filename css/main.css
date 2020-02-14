@@ -39,6 +39,7 @@ h6 {
   border: 2px solid #03436a;
   border-top: none;
   height: 80vh;
+  border-bottom-left-radius: 10px;
 }
 .intro_inner {
   overflow: auto;
@@ -46,16 +47,20 @@ h6 {
 .chat {
   border: 2px solid #03436a;
   border-top: none;
+  border-bottom-right-radius: 10px;
 }
 .your_login {
   align-items: center;
   margin-top: 15px;
 }
 .avatar {
+  min-width: 50px;
+  min-height: 50px;
   max-width: 50px;
   max-height: 50px;
   position: relative;
 }
+
 img {
   width: 100%;
 }
@@ -77,4 +82,51 @@ img {
 }
 .user_online_header {
   text-align: center;
+}
+.icons {
+  max-width: 50px;
+  padding: 5px;
+}
+.search {
+  margin-top: 10px;
+  outline: none;
+}
+.search_area {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #03436a;
+  outline: none;
+}
+
+.search_button {
+  border: none;
+  border-bottom: 1px solid #03436a;
+  background: none;
+  color: #03436a;
+
+  /* outline: none; */
+}
+.search_button:active,
+.search_button:focus {
+  outline: none;
+}
+
+.form-group {
+  outline: none;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
 }
