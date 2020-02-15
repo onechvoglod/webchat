@@ -9,6 +9,15 @@ h5,
 h6 {
   margin: 0;
 }
+p {
+  margin-bottom: 5px;
+}
+.message {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: #b1bfd7;
+  margin-left: 10px;
+  padding: 5px;
+}
 .header {
   width: 100%;
   background-color: #03436a;
@@ -45,22 +54,34 @@ h6 {
   overflow: auto;
 }
 .chat {
+  padding: 0;
+  height: 80vh;
+}
+.chat_inner {
   border: 2px solid #03436a;
   border-top: none;
   border-bottom-right-radius: 10px;
+  height: 65vh;
+  overflow: auto;
 }
-.your_login {
+.your_login,
+.login {
   align-items: center;
   margin-top: 15px;
 }
+.chat_login {
+  margin-top: 15px;
+}
+.avatar {
+  position: relative;
+}
+.avatar_chat,
 .avatar {
   min-width: 50px;
   min-height: 50px;
   max-width: 50px;
   max-height: 50px;
-  position: relative;
 }
-
 img {
   width: 100%;
 }
@@ -111,10 +132,29 @@ img {
   outline: none;
 }
 
-.form-group {
-  outline: none;
+.form_sms {
+  padding: 5px 5px 0 5px;
+  height: 15vh;
+  margin-bottom: 0;
+}
+textarea.form-control {
+  flex-grow: 1;
+}
+textarea {
+  resize: none;
 }
 
+.control:active,
+.control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn_send {
+  width: 100%;
+  margin-top: 2px;
+  padding: 0;
+}
 :focus::-webkit-input-placeholder {
   color: transparent;
 }
