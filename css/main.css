@@ -18,6 +18,10 @@ p {
   margin-left: 10px;
   padding: 5px;
 }
+.time {
+  font-size: 0.7rem;
+  color: grey;
+}
 .header {
   width: 100%;
   background-color: #03436a;
@@ -30,6 +34,13 @@ p {
   font-weight: 700;
   color: #fff;
   padding-left: 3px;
+}
+
+.dropdown {
+  padding: 0 2px;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  display: none;
 }
 .btn-primary {
   background-color: #245a7a;
@@ -70,7 +81,7 @@ p {
   margin-top: 15px;
 }
 .chat_login {
-  margin-top: 15px;
+  margin-top: 15px 5px 0 5px;
 }
 .avatar {
   position: relative;
@@ -139,13 +150,14 @@ img {
 }
 textarea.form-control {
   flex-grow: 1;
+  outline: none;
 }
 textarea {
   resize: none;
 }
 
-.control:active,
-.control:focus {
+textarea.form-control:active,
+textarea.form-control:focus {
   outline: none;
   box-shadow: none;
 }
@@ -153,7 +165,7 @@ textarea {
 .btn_send {
   width: 100%;
   margin-top: 2px;
-  padding: 0;
+  padding-top: 2px;
 }
 :focus::-webkit-input-placeholder {
   color: transparent;
@@ -169,4 +181,47 @@ textarea {
 
 :focus:-ms-input-placeholder {
   color: transparent;
+}
+.d-flex {
+  display: flex;
+}
+.btn_change {
+  display: none;
+  /* margin-bottom: 4px;
+  padding: 4px 8px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee; */
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  top: -38px;
+  font-size: 24px;
+}
+
+.row_main {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  /* .dropdown {
+    display: inline-block;
+  } */
+  .btn_change {
+    display: inline-block;
+  }
+  .user_online {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .user_online {
+    display: flex;
+  }
+  input[type="checkbox"]:checked ~ .chat {
+    display: none;
+  }
 }

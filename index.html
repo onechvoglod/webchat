@@ -16,7 +16,10 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 header_inner d-flex justify-content-between">
-            <div class="header_logo">Webchat</div>
+            <div class="header_logo">
+              Webchat
+              <!-- <i class="fa fa-align-justify dropdown"></i> -->
+            </div>
             <button type="submit" class="btn btn-primary">QUIT</button>
           </div>
         </div>
@@ -24,8 +27,12 @@
     </header>
     <section class="intro">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-5 col-md-4 user_online  d-flex flex-column">
+        <div class="row row_main">
+          <label for="pseudoBtn" class="btn_change fa  fa-align-justify">
+          </label>
+          <input type="checkbox" id="pseudoBtn" />
+          <div class="col-sm-5 col-md-4  user_online d-flex flex-column">
+            <!-- d-none d-sm-block  -->
             <div class="your_login d-flex flex-row">
               <div class="avatar">
                 <img
@@ -56,7 +63,9 @@
                 <div class="avatar">
                   <img src="images/avatar.png" alt="your foto" />
                 </div>
-                <div class="user_name">Nechvoglod Oleg</div>
+                <div class="user_name">
+                  Nechvoglod Oleg
+                </div>
               </div>
               <div class="login d-flex flex-row">
                 <div class="avatar">
@@ -102,14 +111,14 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-7 col-md-8 chat">
+          <div class="col-sm-7 col-md-8 d-flex flex-column chat">
             <div class="chat_inner">
               <div class="chat_login d-flex flex-row">
                 <div class="avatar_chat">
                   <img src="images/avatar.png" alt="your foto" />
                 </div>
                 <div class="user_name">
-                  <p>Nechvoglod Oleg</p>
+                  <p>Nechvoglod Oleg <span class="time">(21:21)</span></p>
                   <p class="message">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -123,7 +132,7 @@
                   <img src="images/avatar.png" alt="your foto" />
                 </div>
                 <div class="user_name">
-                  <p>Nechvoglod Oleg</p>
+                  <p>Nechvoglod Oleg <span class="time">(21:21)</span></p>
                   <p class="message">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
@@ -134,7 +143,7 @@
                   <img src="images/avatar.png" alt="your foto" />
                 </div>
                 <div class="user_name">
-                  <p>Nechvoglod Oleg</p>
+                  <p>Nechvoglod Oleg <span class="time">(21:21)</span></p>
                   <p class="message">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -148,7 +157,7 @@
                   <img src="images/avatar.png" alt="your foto" />
                 </div>
                 <div class="user_name">
-                  <p>Nechvoglod Oleg</p>
+                  <p>Nechvoglod Oleg <span class="time">(21:21)</span></p>
                   <p class="message">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -161,8 +170,8 @@
             <form>
               <div class="form-group d-flex flex-column form_sms">
                 <textarea maxlength="200" class="form-control"></textarea>
-                <button type="button" class="btn btn-success btn_send">
-                  Success
+                <button type="button" class="btn btn-success fa btn_send">
+                  Send &#xf1d8;
                 </button>
               </div>
             </form>
@@ -178,8 +187,12 @@
               <a href="https://www.youtube.com/?gl=UA"
                 ><img src="images/youtube.svg" alt="youtube" class="icons"
               /></a>
-              <img src="images/twitter.svg" alt="twitter" class="icons" />
-              <img src="images/google.svg" alt="google" class="icons" />
+              <a href="https://twitter.com/"
+                ><img src="images/twitter.svg" alt="twitter" class="icons"
+              /></a>
+              <a href="https://www.google.com/"
+                ><img src="images/google.svg" alt="google" class="icons"
+              /></a>
             </div>
           </div>
         </div>
