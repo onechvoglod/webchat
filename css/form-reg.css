@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.main_form {
+  border: 2px solid #03436a;
+  padding: 5px;
+}
+.header_form {
+  background: #03436a;
+  margin: -5px;
+  height: 35px;
+}
+.btn_authorization,
+.btn_registration {
+  color: #fff;
+  padding: 0 5px 5px;
+  margin: 0 10px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-primary {
+  width: 100%;
+}
+.inner_form1,
+.inner_form2 {
+  padding-top: 20px;
+}
+
+.active {
+  color: #03436a;
+  background-color: white;
+  padding: 0 5px 5px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
